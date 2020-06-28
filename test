@@ -1,0 +1,29 @@
+[
+    {action:"hideAll"},
+    {action:"parallel",list:[
+        {action:"sequence",list:[
+            {action:"move",matrix:2,target:1,from:[-700,0],to:[-300,0],time:2,animation:"run"},
+            {action:"playAnimation",matrix:2,target:1, animation:"guard",loop:"true"}
+        ]},
+        {action:"sequence",list:[
+            {action:"move",matrix:2,target:2, from:[-700,0],to:[-300,0],time:2,animation:"run",endDirection:2},
+            {action:"playAnimation",matrix:2,target:1, animation:"guard",loop:"true"}
+        ]},
+        {action:"sequence",list:[
+            {action:"move",matrix:2,target:3, from:[300,0],to:[-100,0],time:2,animation:"run",endDirection:2},
+            {action:"playAnimation",matrix:2,target:1, animation:"guard",loop:"true"}
+        ]},
+        {action:"sequence",list:[
+            {action:"move",matrix:2,target:4, from:[300,0],to:[-100,0],time:2,animation:"run",endDirection:2},
+            {action:"playAnimation",matrix:2,target:1, animation:"guard",loop:"true"}
+        ]},
+        {action:"sequence",list:[
+            {action:"move",matrix:2,target:5, from:[300,0],to:[-100,0],time:2,animation:"run",endDirection:2},
+            {action:"playAnimation",matrix:2,target:1, animation:"guard",loop:"true"}
+        ]},
+        {action:"sequence",list:[
+            {action:"delay",time:2.5},
+            {action:"showAppear",matrix:1,target:"all"}
+        ]}
+    ]}
+]
